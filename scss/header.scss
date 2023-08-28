@@ -1,0 +1,81 @@
+.header{
+    background: rgba(59, 139, 107, 0.65);
+    &_container{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: height 400ms ease-out;
+        @media (max-width: 1000px) {
+            overflow: hidden;
+            flex-wrap: wrap;
+            padding-bottom: 24px;
+            align-content: baseline;
+        }
+    }
+    &_logo{
+        @media (max-width: 1000px) {
+            width: 50%;
+            display: flex;
+            justify-content: left;
+        }
+    }
+    &_nav{
+        display: flex;
+        column-gap: 16px;
+        @media (max-width: 1000px) {
+            width: 100%;
+            order: 3;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 16px;
+            margin-top: 24px;
+        }
+        a{
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+            @media (max-width: 1000px) {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+    &_auth{
+        display: flex;
+        column-gap: 22px;
+        @media (max-width: 1000px) {
+            width: 100%;
+            order: 2;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        button{
+            background: none;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        button:last-child{
+            border: 1px solid white;
+            width: 101px;
+            height: 40px;
+            border-radius: 8px;
+        }
+    }
+    &_burger{
+        display: none;
+        @media (max-width: 1000px) {
+            width: 50%;
+            display: flex;
+            justify-content: right;
+            height: 100px;
+            order: 1;
+        }
+        button{
+            background: none;
+        }
+    }
+}

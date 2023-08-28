@@ -1,0 +1,65 @@
+@import 'null';
+@import 'header';
+@import 'main/usp.scss';
+@import 'main/dynamics.scss';
+@import 'main/advantages.scss';
+@import 'main/second_advantages.scss';
+
+.footer{
+    padding: 28px 0px;
+    background: rgba(59, 139, 107, 0.65);
+    margin-top: 100px;
+    &_inner{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 40px;
+    }
+    &_info{
+        &_p{
+            margin-top: 16px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            max-width: 370px;
+            @media (max-width: 600px) {
+                font-size: 10px;
+            }
+        }
+        &_media{
+            margin-top: 40px;
+            display: flex;
+            column-gap: 24px;
+        }
+    }
+    &_nav{
+        max-width: 230px;
+        @media (max-width: 600px) {
+            max-width: 100px;
+        }
+        &_header{
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &_list{
+            margin-top: 20px;
+            max-width: 230px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            @media (max-width: 600px) {
+                row-gap: 10px;
+            }
+        }
+        &_element{
+            display: block;
+            width: 45%;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 400;
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+        }
+    }
+}
