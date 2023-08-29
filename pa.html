@@ -9,15 +9,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Rubik:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Rubik:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body id="root">
-
+    <div class="pa container">
+        <div class="pa_info">
+            <div class="pa_user">
+                <div class="pa_user_info">
+                    <div class="pa_user_info_photo">
+                    </div>
+                    <div class="pa_user_info_data">
+                        <div class="pa_user_info_data_element">
+                            <img src="img/pa/clock.svg" alt="clock"> Premium
+                        </div>
+                        <div class="pa_user_info_data_element">
+                            <img src="img/pa/person.svg" alt="person"> User_name
+                        </div>
+                        <div class="pa_user_info_data_element">
+                            <img src="img/pa/mail.svg" alt="mail"> fafa@mail.com
+                        </div>
+                        <div class="pa_user_info_data_element">
+                            <img src="img/pa/tag.svg" alt="tag"> ID : 1312412
+                        </div>
+                    </div>
+                </div>
+                <div class="pa_user_delimiter"></div>
+                <div class="pa_user_balance">
+                    <div class="pa_user_balance_header">
+                        Total balance:
+                    </div>
+                    <div class="pa_user_balance_value">
+                        100 000. 23$
+                    </div>
+                </div>
+            </div>
+            <div class="pa_gift">
+                <img src="img/pa/gift.svg" alt="gift">
+                <div class="pa_gift_info">
+                    <div class="pa_gift_info_header">
+                        Use bonus promo code :
+                    </div>
+                    <div class="pa_gift_info_input">
+                        <input type="text">
+                        <button>Activate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pa_buttons">
+            <div class="pa_search">
+                <div class="pa_search_input">
+                    <img src="img/pa/search.svg" alt="search">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="pa_search_checkbox">
+                    <div class="checkbox">
+                        <img src="img/general/success.svg" alt="">
+                    </div>
+                    Hide zero balance
+                </div>
+            </div>
+            <div class="pa_do_transactions">
+                <button>
+                    Deposit
+                </button>
+                <button>
+                    Withdraw
+                </button>
+                <button>
+                    Transfer
+                </button>
+            </div>
+        </div>
+        <div class="pa_balances">
+            <div class="pa_balances_element pa_balances_header">
+                <div class="pa_balances_element_name">
+                    Coin
+                </div>
+                <div class="pa_balances_element_balance">
+                    Balance
+                </div>
+                <div class="pa_balances_element_eq">
+                    Equivalent
+                </div>
+            </div>
+            <div class="pa_balances_element">
+                <div class="pa_balances_element_name">
+                    <div class="pa_balances_element_name_img">
+                        <img src="img/currency/btc.svg" alt="btc">
+                    </div>
+                    Bitcoin
+                </div>
+                <div class="pa_balances_element_balance">
+                    0.00BTC
+                </div>
+                <div class="pa_balances_element_eq">
+                    0.00USD
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/header.js"></script>
     <script src="js/header_opener.js"></script>
+    <script src="js/checkbox.js"></script>
 </body>
 
 </html>

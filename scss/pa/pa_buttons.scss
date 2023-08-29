@@ -1,0 +1,73 @@
+.pa{
+    &_buttons{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 900px) {
+            flex-wrap: wrap;
+            row-gap: 12px;
+        }
+    }
+    &_search{
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        @media (max-width: 900px) {
+            width: 100%;
+            justify-content: center;
+        }
+        @media (max-width: 500px) {
+            flex-wrap: wrap;
+            row-gap: 12px;
+        }
+        &_input{
+            border-radius: 8px;
+            border: 1px solid hsl(165, 33%, 31%);
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+            img{
+                opacity: 0.56;
+            }
+            input{
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                background: none;
+            }
+            input::placeholder{
+                color: rgba(255, 255, 255, 0.56);
+            }
+        }
+        &_checkbox{
+            display: flex;
+            font-size: 16px;
+            font-weight: 400;
+            column-gap: 12px;
+            align-items: center;
+            @media (max-width: 500px) {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+    &_do_transactions{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        @media (max-width: 900px) {
+            width: 100%;
+            justify-content: center;
+        }
+        button{
+            height: 40px;
+            width: 120px;
+            border-radius: 8px;
+            background: #1B5044;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    } 
+}
