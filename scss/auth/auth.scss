@@ -1,0 +1,143 @@
+@import '../null.scss';
+@import '../header.scss';
+
+.auth{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 640px;
+    border-radius: 16px;
+    margin-top: 60px;
+    padding: 30px 24px;
+    background: rgba(64, 140, 111, 0.63);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    &_header{
+        font-size: 32px;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+    &_field{
+        margin-top: 12px;
+        &_header{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &_input{
+            height: 50px;
+            width: 99%;
+            background: none;
+            color: white;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+        &_input:focus{
+            outline:none;
+        }
+    }
+    &_agree{
+        display: flex;
+        column-gap: 12px;
+        font-size: 16px;
+        font-weight: 400;
+        align-items: center;
+        @media (max-width: 400px) {
+            font-size: 12px;
+        }
+            a{
+                color: $green;
+            font-size: 16px;
+            font-weight: 500;
+            @media (max-width: 400px) {
+                font-size: 12px;
+            }
+        }
+    }
+    &_memory{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_forgot{
+        display: flex;
+        a{
+            color: $green;
+            font-size: 16px;
+            font-weight: 500;
+            @media (max-width: 400px) {
+                font-size: 12px;
+            }
+        }
+    }
+    &_checkbox{
+        height: 24px;
+        width: 24px;
+        border-radius: 6px;
+        border: 1px solid #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 3px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        user-select: none; 
+        
+        img{
+            user-select: none; 
+            width: 20px;
+            opacity: 0;
+            transition: opacity 200ms;
+        }
+    }
+    &_checkbox:hover{
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.25);
+    }
+    &_buttons{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        column-gap: 16px;
+        @media (max-width: 400px) {
+            flex-wrap: wrap;
+            row-gap: 12px;
+        }
+        button{
+            padding: 16px 24px;
+            border-radius: 4px;
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.60);
+            @media (max-width: 400px) {
+                width: 100%;
+            }
+        }
+        button:last-child{
+            border: none;
+            background: #4B9D7D;
+        }
+    }
+    &_hr{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        &_inner{
+            width: 375px;
+            height: 1px;
+            background: #4B9D7D;
+        }
+    }
+    &_new{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        a{
+            color: #84E4BE;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+}
