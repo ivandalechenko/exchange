@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFER</title>
+    <link rel="stylesheet" href="css/paTransfer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body id="root">
+    <div class="container" id="paCoinlistWrapper">
+    </div>
+    <div class="paTransfer paWindow container">
+        <div class="paWindow_header">
+            Transfer funds
+        </div>
+        <div class="paWindow_header_small">
+            Intemal transfers between users
+        </div>
+        <div class="paWindow_hr"></div>
+        <div class="paTransfer_content">
+            <div class="paTransfer_inner">
+                <div class="paTransfer_label">
+                    Select coin
+                </div>
+                <div class="paTransfer_select">
+                    <div class="paTransfer_select_name">
+                        <img src="img/currency/btc.svg" alt="btc">
+                        Bitcoin
+                    </div>
+                    <img src="img/general/arrow_down.svg" alt="arrow">
+                </div>
+                <div class="paTransfer_label">
+                    You transfer
+                </div>
+                <input type="text" placeholder="Enter amount">
+                <div class="paTransfer_small_label">
+                    Available: <span class="green">0 BTC</span>
+                </div>
+                <div class="paTransfer_label">
+                    Receiver's wallet address / ID
+                </div>
+                <input type="text" placeholder="Please enter user wallet address or account ID">
+                <div class="paTransfer_small_label">
+                    Note: user can find user ID on the Wallet overview page
+                </div>
+                <button>
+                    Transfer funds
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="paTable container">
+        <div class="paTable_list">
+            <div class="paTable_element paTable_element_header">
+                <div class="paTable_element_transaction_id">
+                    Transaction ID
+                </div>
+                <div class="paTable_element_date">
+                    Date
+                </div>
+                <div class="paTable_element_type">
+                    Type
+                </div>
+                <div class="paTable_element_amount">
+                    Amount
+                </div>
+                <div class="paTable_element_adress">
+                    Adress
+                </div>
+                <div class="paTable_element_status">
+                    Status
+                </div>
+                <div class="paTable_element_transaction_hash">
+                    Transaction hash
+                </div>
+            </div>
+            <div class="paTable_element">
+                <div class="paTable_element_transaction_id">
+                    #41414
+                </div>
+                <div class="paTable_element_date">
+                    24.12.2023
+                </div>
+                <div class="paTable_element_type">
+                    Promo
+                </div>
+                <div class="paTable_element_amount">
+                    100 USDT
+                </div>
+                <div class="paTable_element_adress">
+
+                </div>
+                <div class="paTable_element_status">
+                    Completed
+                </div>
+                <div class="paTable_element_transaction_hash">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/paNav.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/header_opener.js"></script>
+</body>
+
+</html>

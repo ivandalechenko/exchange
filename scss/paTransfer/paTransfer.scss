@@ -1,0 +1,93 @@
+@import '../null.scss';
+@import '../header.scss';
+@import '../paNav.scss';
+@import '../paCoinlist.scss';
+@import '../paTable.scss';
+
+.paTransfer{
+    margin-top: 24px;
+    &_content{
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+    }
+    &_inner{
+        width: 100%;
+        max-width: 340px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &_label{
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+    }
+    &_label:not(:first-child){
+        margin-top: 16px;
+    }
+    input{
+        width: 100%;
+        margin-top: 8px;
+        height: 38px;
+        box-sizing: border-box;
+        padding: 0px 16px;
+        border-radius: 8px;
+        background: rgba(16, 48, 38, 0.60);
+        font-size: 12px;
+        font-weight: 400;
+    }
+    &_small_label{
+        width: 100%;
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 12px;
+        font-weight: 400;
+    }
+    input::placeholder{
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 12px;
+        font-weight: 400;
+    }
+    button{
+        margin-top: 24px;
+        width: 154px;
+        height: 42px;
+        border-radius: 8px;
+        background: #1A4539;
+        color: #84E4BF;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &_select{
+        width: 100%;
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 38px;
+        padding: 0px 16px;
+        border-radius: 8px;
+        background: #449F87;
+        &_name{
+            display: flex;
+            column-gap: 16px;
+            align-items: center;
+            img{
+                width: 100%;
+                height: 100%;
+                max-width: 18px;
+                max-height: 18px;
+            }
+        }
+    }
+
+}
+
+.paTable_element_transaction_id, .paTable_element_date, .paTable_element_type, .paTable_element_amount, .paTable_element_adress, .paTable_element_status, .paTable_element_transaction_hash{
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    width: 14%;
+}

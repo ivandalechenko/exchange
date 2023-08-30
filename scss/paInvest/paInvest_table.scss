@@ -1,0 +1,17 @@
+.paTable{
+    &_element{
+        &_field{
+            font-family: DM Sans;
+            font-size: 14px;
+            font-weight: 400;
+            width: 20%;
+        }
+        &_header{
+            .paTable_element_field{
+                color: $green;
+            }
+        }
+
+    }
+
+}

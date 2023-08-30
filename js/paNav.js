@@ -1,3 +1,3 @@
-const paNav = '<div class="paNav container"><a href="paOverview.html">Overview</a><a href="paDeposit.html" class="active">Deposit</a><a href="#">Withdraw</a><a href="#">Transaction</a><a href="#">Transfer</a><a href="#">Invest</a><a href="#">Affilate</a><a href="#">Settings</a></div>';
+const paNav = '<div class="paNav container"><a href="paWarning.html">Warning</a><a href="paOverview.html">Overview</a><a href="paDeposit.html" class="active">Deposit</a><a href="paWithdraw.html">Withdraw</a><a href="paTransaction.html">Transaction</a><a href="paTransfer.html">Transfer</a><a href="paInvest.html">Invest</a><a href="#">Affilate</a><a href="#">Settings</a></div>';
 
 document.getElementById('root').innerHTML = paNav + document.getElementById('root').innerHTML;  

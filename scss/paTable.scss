@@ -1,0 +1,48 @@
+.paTable{
+    overflow-x: auto;
+    &_header{
+        margin-top: 24px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &_header_small{
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &_content{
+        padding: 20px 40px;
+        border-radius: 8px;
+        background: linear-gradient(312deg, #9381FF 0%, rgba(147, 129, 255, 0.89) 100%);
+    }
+    &_list{
+        min-width: 900px;
+        padding: 20px 40px;
+        border-radius: 8px;
+        border: 1px solid $green;
+        margin-top: 24px;
+        min-height: 300px;
+    }
+    &_element{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #FFF2;
+        .div{
+            font-family: DM Sans;
+            font-size: 14px;
+            font-weight: 400;
+            width: 14%;
+        }
+        &_header{
+            div{
+                color: $green;
+            }
+        }
+
+    }
+
+}

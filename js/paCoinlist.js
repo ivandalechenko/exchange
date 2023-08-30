@@ -1,0 +1,3 @@
+const paCoinList = '<div class="paCoinlist"><div class="paCoinlist_element paCoinlist_element_active"><div class="paCoinlist_element_img"><img src="img/currency/btc.svg" alt="btc"></div>Bitcoin</div><div class="paCoinlist_element"><div class="paCoinlist_element_img"><img src="img/currency/eth.svg" alt="btc"></div>Eth</div></div>'
+
+document.getElementById('paCoinlistWrapper').innerHTML = paCoinList + document.getElementById('paCoinlistWrapper').innerHTML

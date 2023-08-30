@@ -1,0 +1,16 @@
+@import '../null.scss';
+
+.paWarning{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        max-width: 1000px;
+        height: 500px;
+    }
+}

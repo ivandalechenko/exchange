@@ -1,0 +1,43 @@
+.paCoinlist{
+    width: 100%;
+    max-width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    align-content: baseline;
+    @media (max-width: 1020px) {
+        max-width: 100%;
+    }
+    &_element{
+        height: 50px;
+        width: 268px;
+        border-radius: 16px;
+        background: rgba(44, 103, 85, 0.55);
+        display: flex;
+        align-items: center;
+        padding: 0px 16px;
+        column-gap: 16px;
+        font-size: 16px;
+        font-weight: 500;
+        @media (max-width: 1020px) {
+            width: 100%;
+        }
+        &_img{
+            border-radius: 32px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            img{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    &_element_active{
+        background: #2C6755;
+    }
+
+}

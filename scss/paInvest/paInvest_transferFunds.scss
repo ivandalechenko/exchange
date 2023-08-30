@@ -1,0 +1,91 @@
+.paInvest{
+
+    &_transfer_funds{
+        max-width: 400px;
+        @media (max-width: 900px) {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    &_label{
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        margin-top: 16px;
+    }
+    &_small_label{
+        width: 100%;
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 12px;
+        font-weight: 400;
+    }
+    &_select{
+        width: 100%;
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 38px;
+        padding: 0px 16px;
+        border-radius: 8px;
+        background: #449F87;
+        &_name{
+            display: flex;
+            column-gap: 16px;
+            align-items: center;
+            img{
+                width: 100%;
+                height: 100%;
+                max-width: 18px;
+                max-height: 18px;
+            }
+        }
+    }
+    &_stacking_plan_list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 16px;
+        margin-top: 16px;
+        @media (max-width: 430px) {
+            justify-content: center;
+        }
+    }    
+    &_stacking_plan_element{
+        width: 45%;
+        min-width: 150px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.63);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        &_duration{
+            border-right: 1px solid rgba(255, 255, 255, 0.63);
+        }
+        &_duration, &_avalible{
+            padding: 0px 10px;
+            &_value{
+                font-size: 24px;
+                font-weight: 400;
+                width: 100%;
+                text-align: center;
+            }
+            &_name{
+                color: rgba(255, 255, 255, 0.63);
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+    &_stake_button{
+        margin-top: 16px;
+        width: 100%;
+        height: 38px;
+        border-radius: 8px;
+        background: linear-gradient(90deg, #2E8D47 0%, #177287 100%);
+        font-size: 12px;
+        font-weight: 500;
+    }
+}

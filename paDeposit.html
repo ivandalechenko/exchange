@@ -16,22 +16,53 @@
 
 <body id="root">
 
-    <div class="paDeposit container">
-        <div class="paCoinlist">
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
-            <div class="paCoinlist_element"></div>
+    <div class="paDeposit container" id="paCoinlistWrapper">
+        <div class="paDeposit_info paWindow">
+            <div class="paWindow_header">
+                Wallet deposit address
+            </div>
+            <div class="paWindow_hr"></div>
+            <div class="paDeposit_cur">
+                <img src="img/currency/btc.svg" alt="btc">
+                <div class="paDeposit_cur_info">
+                    <div class="paDeposit_cur_info_name">
+                        BTC Bitcoin
+                    </div>
+                    <div class="paDeposit_cur_info_value">
+                        0.00
+                    </div>
+                </div>
+            </div>
+            <div class="paDeposit_share">
+                <div class="paDeposit_share_qr">
+                    PLACE FOR QR
+                </div>
+                <div class="paDeposit_share_info">
+                    <ul>
+                        <li>
+                            Coins will be deposited after 3 network confirmation
+                        </li>
+                        <li>
+                            Send only BTC
+                        </li>
+                        <li>
+                            Minimum Deposit amount 0.10101040140140104
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paDeposit_adress">
+                <div class="paDeposit_adress_info">
+                    12521389501c2305d12395dj2153f0j9123d5012k395f812739j0f
+                </div>
+                <button class="paDeposit_adress_btn">
+                    Copy
+                </button>
+            </div>
         </div>
     </div>
 
+    <script src="js/paCoinlist.js"></script>
     <script src="js/paNav.js"></script>
     <script src="js/header.js"></script>
     <script src="js/header_opener.js"></script>

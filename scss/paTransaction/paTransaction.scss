@@ -1,0 +1,27 @@
+@import '../null.scss';
+@import '../header.scss';
+@import '../paNav.scss';
+@import '../paTable.scss';
+
+.paTable{
+    &_element{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #FFF2;
+        .paTable_element_transaction_id, .paTable_element_date, .paTable_element_type, .paTable_element_amount, .paTable_element_adress, .paTable_element_status, .paTable_element_transaction_hash{
+            font-family: DM Sans;
+            font-size: 14px;
+            font-weight: 400;
+            width: 14%;
+        }
+        &_header{
+            .paTable_element_transaction_id, .paTable_element_date, .paTable_element_type, .paTable_element_amount, .paTable_element_adress, .paTable_element_status, .paTable_element_transaction_hash{
+                color: $green;
+            }
+        }
+
+    }
+
+}
