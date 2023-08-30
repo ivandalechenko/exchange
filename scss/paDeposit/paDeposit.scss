@@ -1,0 +1,31 @@
+@import '../null.scss';
+@import '../header.scss';
+@import '../paNav.scss';
+
+
+.paDeposit{
+    margin-top: 50px;
+
+}
+
+.paCoinlist{
+    width: 100%;
+    max-width: 310px;
+    max-height: 60vh;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    &_element{
+        height: 50px;
+        width: 268px;
+        border-radius: 16px;
+        background: #2C6755;
+        
+    }
+}
+.paCoinlist::-webkit-scrollbar-thumb {
+    background-color: blue;    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */
+    border: 3px solid orange;  /* отступ вокруг бегунка */
+  }
