@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P</title>
+    <link rel="stylesheet" href="css/p2p.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="root">
+
+    <div class="p2p container">
+        <div class="p2p_sidebar">
+            <div class="p2p_sidebar_buy_sell">
+                <div class="p2p_sidebar_buy p2p_sidebar_active">
+                    Buy
+                </div>
+                <div class="p2p_sidebar_sell">
+                    Sell
+                </div>
+            </div>
+            <div class="p2p_sidebar_amount">
+                Enter amount
+                <div class="p2p_sidebar_select">
+                    BTC
+                    <img src="img/general/double_arrows.svg" alt="arrows">
+                </div>
+            </div>
+            <div class="p2p_sidebar_amount">
+                Enter amount
+                <div class="p2p_sidebar_select">
+                    BTC
+                    <img src="img/general/double_arrows.svg" alt="arrows">
+                </div>
+            </div>
+            <div class="p2p_sidebar_amount">
+                All payment methods
+                <img src="img/general/arrow_down.svg" alt="">
+            </div>
+            <div class="p2p_sidebar_switch">
+                <div class="p2p_sidebar_switch_text">
+                    <div class="p2p_sidebar_switch_text_large">
+                        Verified users
+                    </div>
+                    <div class="p2p_sidebar_switch_text_small">
+                        Show ads of verified traders only
+                    </div>
+                </div>
+                <div class="p2p_sidebar_switch_switch ">
+                    <div class="p2p_sidebar_switch_switch_dot"></div>
+                </div>
+            </div>
+            <div class="p2p_sidebar_switch">
+                <div class="p2p_sidebar_switch_text">
+                    <div class="p2p_sidebar_switch_text_large">
+                        Verified users
+                    </div>
+                    <div class="p2p_sidebar_switch_text_small">
+                        Show ads of verified traders only
+                    </div>
+                </div>
+                <div class="p2p_sidebar_switch_switch p2p_sidebar_switch_switch_toggled">
+                    <div class="p2p_sidebar_switch_switch_dot"></div>
+                </div>
+            </div>
+            <button class="p2p_sidebar_search">
+                Search
+            </button>
+
+        </div>
+        <div class="p2p_table">
+            <div class="p2p_table_row p2p_table_header">
+                <div class="p2p_table_row_element">Trader</div>
+                <div class="p2p_table_row_element">Payment method</div>
+                <div class="p2p_table_row_element">Price</div>
+                <div class="p2p_table_row_element">Limits</div>
+                <div class="p2p_table_row_element"></div>
+            </div>
+            <div class="p2p_table_row">
+                <div class="p2p_table_row_element">
+                    <img src="img/p2p/avatar.svg" alt="avatar">
+                    <div class="p2p_table_row_element_user_info">
+                        <div class="p2p_table_row_element_user_info_name">
+                            Bitcoin
+                        </div>
+                        <div class="p2p_table_row_element_user_info_orders">
+                            628 orders, 97
+                        </div>
+                        <div class="p2p_table_row_element_user_info_status">
+                            <img src="img/p2p/online.svg" alt="online">
+                            Online
+                        </div>
+                    </div>
+                </div>
+                <div class="p2p_table_row_element">MasterCard</div>
+                <div class="p2p_table_row_element p2p_table_row_price">29,132.12USD</div>
+                <div class="p2p_table_row_element">$0-28 200,00 USD</div>
+                <div class="p2p_table_row_element p2p_table_row_sell">
+                    <button class="p2p_table_row_sell_btn">
+                        Sell BTC
+                    </button>
+                </div>
+            </div>
+            <div class="p2p_table_row">
+                <div class="p2p_table_row_element">
+                    <img src="img/p2p/avatar.svg" alt="avatar">
+                    <div class="p2p_table_row_element_user_info">
+                        <div class="p2p_table_row_element_user_info_name">
+                            Bitcoin
+                        </div>
+                        <div class="p2p_table_row_element_user_info_orders">
+                            628 orders, 97
+                        </div>
+                        <div class="p2p_table_row_element_user_info_status">
+                            <img src="img/p2p/offline.svg" alt="online">
+                            Offline
+                        </div>
+                    </div>
+                </div>
+                <div class="p2p_table_row_element">MasterCard</div>
+                <div class="p2p_table_row_element p2p_table_row_price">29,132.12USD</div>
+                <div class="p2p_table_row_element">$0-28 200,00 USD</div>
+                <div class="p2p_table_row_element p2p_table_row_sell">
+                    <button class="p2p_table_row_sell_btn">
+                        Sell BTC
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/header_opener.js"></script>
+</body>
+
+</html>

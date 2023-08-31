@@ -1,0 +1,114 @@
+.p2p{
+    &_sidebar{
+        &_search{
+            margin-top: 16px;
+            border-radius: 8px;
+            width: 100%;
+            font-size: 12px;
+            font-weight: 500;
+            height: 38px;
+            background: linear-gradient(90deg, #2E8D47 0%, #177287 100%);
+        }
+        padding: 15px 12px;
+        width: 264px;
+        border-radius: 16px;
+        background: rgba(64, 140, 112, 0.32);
+        backdrop-filter: blur(2px);
+        &_switch{
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_text{
+                &_large{
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                &_small{
+                    color: rgba(255, 255, 255, 0.63);
+                      font-size: 8px;
+                    font-weight: 400;
+                }
+            }
+            &_switch{
+                width: 40px;
+                height: 18px;
+                background-color: #b0b0b0;
+                border-radius: 20px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                padding: 0px 1.5px;
+                &_dot{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 16px;
+                    background: white;
+                }
+            }
+            &_switch_toggled{
+                justify-content: right;
+                background: #47857E;
+            }
+            &_switch:hover{
+                cursor: pointer;
+                background-color: #818181;
+            }
+
+        }
+        
+        &_buy_sell{
+            width: 100%;
+            display: flex
+        }
+        &_buy{
+            border-radius: 8px 0px 0px 8px;
+        }
+        &_sell{
+            border-radius: 0px 8px 8px 0px;
+        }
+        &_buy, &_sell{
+            font-size: 12px;
+            font-weight: 500;
+            width: 50%;
+            border: 1px solid #2E8D47;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_buy:hover, &_sell:hover{
+            cursor: pointer;
+            background: #2E8D47;
+        }
+        &_active{
+            background: #2E8D47;
+        }
+        &_amount{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+            border-radius: 8px;
+            background: rgba(132, 228, 191, 0.49);
+            height: 38px;
+            padding: 0px 16px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        &_select{
+            height: 24px;
+            display: flex;
+            column-gap: 8px;
+            padding: 0px 12px;
+            border-radius: 4px;
+            background: #124B44;
+            align-items: center;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            img{
+                width: 7px;
+            }
+        }
+    }
+}

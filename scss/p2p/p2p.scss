@@ -1,0 +1,90 @@
+@import '../null.scss';
+@import '../header.scss';
+@import './p2p_sidebar.scss';
+
+.p2p{
+    margin-top: 20px;
+    display: flex;
+    column-gap: 24px;
+    &_table{
+        padding: 0px 24px;
+        border-radius: 8px;
+        border: 1px solid #84E4BE;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: baseline;
+        &_row{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            &_sell{
+                justify-content: right;
+                &_btn{
+                    height: 29px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding: 0px 10px;
+                    border-radius: 8px;
+                    border: 1px solid #84E4BE;
+                    background: none;
+                }
+            }
+            &_price{
+                color: #84E4BE;
+            }
+            &_element{
+                width: 100%;
+                display: flex;
+                column-gap: 6px;
+                align-items: center;
+                height: 50px;
+                font-family: DM Sans;
+                font-size: 12px;
+                font-weight: 500;
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+                &_user_info{
+                    &_name{
+                        color: #84E4BE;
+                        font-family: DM Sans;
+                        font-size: 10px;
+                        font-weight: 500;
+                    }
+                    &_orders{
+                        color: rgba(255, 255, 255, 0.63);
+                        font-family: DM Sans;
+                        font-size: 8px;
+                        font-style: normal;
+                        font-weight: 500;
+                    }
+                    &_status{
+                        display: flex;
+                        column-gap: 2px;
+                        font-family: DM Sans;
+                        font-size: 8px;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        img{
+                            width: 4px;
+height: 4px;
+                        }
+                    }
+                }
+            }
+        }
+        &_header{
+            height: 55px;
+            border-bottom: 1px solid #fff4;
+            .p2p_table_row_element{
+                color: #84E4BE;
+                font-family: DM Sans;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+}
