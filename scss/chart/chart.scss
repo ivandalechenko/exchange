@@ -1,0 +1,178 @@
+@import '../null.scss';
+@import '../header.scss';
+
+.red_table{
+    .chart_cup_table_row{
+        background: rgba(188, 69, 75, 0.29);
+    }
+    .chart_cup_table_row_header{
+        background: none;
+    }
+    .chart_cup_table_row_price{
+        color: #BC454B;
+    }
+}
+.green_table{
+    .chart_cup_table_row{
+        background: rgba(132, 228, 191, 0.19);
+    }
+    .chart_cup_table_row_header{
+        background: none;
+    }
+    .chart_cup_table_row_price{
+        color: #84E4BF;;
+    }
+}
+
+.chart{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    &_cup{
+        width: 23%;
+        &_header{
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &_table{
+            margin-top: 8px;
+            &_row{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 4px;
+                &_price, &_amount, &_total{
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+                &_header{
+                    .chart_cup_table_row_price, .chart_cup_table_row_amount, .chart_cup_table_row_total{
+                        color: rgba(255, 255, 255, 0.63);
+                        font-family: DM Sans;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &_total{
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 16px;
+            border: 1px solid rgba(64, 145, 126, 0.56);
+            height: 68px;
+            padding: 0px 20px;
+            &_price{
+                width: 40%;
+                &_status{
+                    color: #FF4750;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+                &_usdt{
+                    color: rgba(255, 255, 255, 0.63);
+                    font-size: 8px;
+                    font-weight: 400;
+                }
+            }
+            &_vol{
+                &_status, &_usdt{
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: right;
+                    padding: 4px 0px;
+                }
+                &_status{
+                    border-bottom: 1px solid white;
+                }
+                .vol{
+                    color: rgba(255, 255, 255, 0.63);
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }
+    &_center{
+        width: 52%;
+        &_wallets{
+            &_header{
+                color: #B1AFCD;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            &_list{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+            }
+            &_add{
+                border-radius: 10px;
+                border: 1px dashed #408D72;
+                color: #FFF4;
+                text-align: right;
+                font-family: Rubik;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                width: 130px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &_element:hover{
+                cursor: pointer;
+                    border: 1px solid #408D7200;
+                background: rgba(64, 141, 115, 0.7);
+                box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+            }
+            &_element{
+                width: 130px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 10px;
+                border: 1px solid #408D72;
+                padding: 0px 16px;
+                &_active{
+                    border: 1px solid #408D7200;
+                    background: rgba(64, 141, 115, 0.54);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+                &_fr{
+                    display: flex;
+                    justify-content: right;
+                    column-gap: 4px;
+                    &_count{
+                        font-size: 8px;
+                        font-weight: 400;
+                    }
+                    &_name{
+                        color: #fff8;
+                        font-size: 8px;
+                        font-weight: 400;
+                    }
+                }
+                &_sr{
+                    margin-top: 4px;
+                    column-gap: 4px;
+                    display: flex;
+                    &_percent{
+                        color: #FFF;
+                        font-size: 8px;
+                        font-weight: 400;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}

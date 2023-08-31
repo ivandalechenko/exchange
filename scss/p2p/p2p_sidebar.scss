@@ -1,5 +1,29 @@
 .p2p{
     &_sidebar{
+        padding: 15px 12px;
+        width: 264px;
+        border-radius: 16px;
+        background: rgba(64, 140, 112, 0.32);
+        backdrop-filter: blur(2px);
+        @media (max-width: 1000px) {
+            background: none;
+            width: 100%;
+        }
+        &_currencyes{
+            display: none;
+            justify-content: center;
+            column-gap: 10px;
+            margin-top: 20px;
+            row-gap: 16px;
+            flex-wrap: wrap;
+            @media (max-width: 1000px) {
+                display: flex;
+            }
+            a{
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
         &_search{
             margin-top: 16px;
             border-radius: 8px;
@@ -8,17 +32,18 @@
             font-weight: 500;
             height: 38px;
             background: linear-gradient(90deg, #2E8D47 0%, #177287 100%);
+            @media (max-width: 1000px) {
+                display: none;
+            }
         }
-        padding: 15px 12px;
-        width: 264px;
-        border-radius: 16px;
-        background: rgba(64, 140, 112, 0.32);
-        backdrop-filter: blur(2px);
         &_switch{
             margin-top: 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media (max-width: 1000px) {
+                display: none;
+            }
             &_text{
                 &_large{
                     font-size: 12px;
@@ -96,6 +121,9 @@
             padding: 0px 16px;
             font-size: 12px;
             font-weight: 400;
+            @media (max-width: 1000px) {
+                display: none;
+            }
         }
         &_select{
             height: 24px;

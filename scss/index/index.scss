@@ -5,3 +5,132 @@
 @import './dynamics.scss';
 @import './advantages.scss';
 @import './second_advantages.scss';
+
+.index_images{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    .fone1{
+        top: -594px;
+        left: -572px;
+    }
+}
+
+.slick-next:before {
+    content: '>';
+    font-family: 'Rubik';
+}
+
+.slick-prev:before {
+    content: '<';
+    font-family: 'Rubik';
+}
+
+.slick-next:before, .slick-prev:before {
+    color: #fff;
+    font-size: 60px;
+}
+.slick-next, .slick-prev {
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.slider_first_element{
+    max-width: 30%;
+    &_wrapper{
+        padding: 0px 50px;
+        @media (max-width: 1050px) {
+            padding: 0px 10px;
+        }
+    }
+    &_header{
+        color: #84E4BE;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: DM Sans;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &_content{
+        margin-top: 8px;
+        border-radius: 10px;
+        border: 1px solid #84E4BE;
+        padding: 15px;
+    }
+    &_chart_price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_price{
+        font-family: DM Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1.6px;
+        .dollar{
+            font-size: 20px;
+        }
+    }
+    &_percent{
+        &_list{
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_element{
+            margin-top: 4px;
+            &_header{
+                font-family: DM Sans;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            &_value{
+                color: #3EDD87;
+                font-family: DM Sans;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.slider_second{
+    margin-top: 90px;
+}
+
+.slider_second_element{
+    &_wrapper{
+        padding: 0px 50px;
+        @media (max-width: 1050px) {
+            padding: 0px 10px;
+        }
+    }
+    &_content{
+        border-radius: 16px;
+        background: #296B5E;
+        padding-bottom: 20px;
+        &_header{
+            margin-top: 8px;
+            padding: 0px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        &_p{
+            margin-top: 4px;
+            padding: 0px 16px;
+            color: rgba(255, 255, 255, 0.63);
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+    img{
+        border-radius: 16px;
+        width: 100%;
+    }
+}
+.usp_button_block_bot{
+    display: flex;
+    justify-content: center;
+}

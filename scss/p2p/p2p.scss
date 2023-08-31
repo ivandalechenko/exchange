@@ -6,15 +6,22 @@
     margin-top: 20px;
     display: flex;
     column-gap: 24px;
+    @media (max-width: 1000px) {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
     &_table{
         padding: 0px 24px;
         border-radius: 8px;
         border: 1px solid #84E4BE;
         display: flex;
         width: 100%;
+        overflow-x: auto;
         flex-wrap: wrap;
         align-content: baseline;
         &_row{
+            min-width: 800px;
             width: 100%;
             display: flex;
             align-items: center;
