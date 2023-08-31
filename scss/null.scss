@@ -46,7 +46,7 @@ body{
 }
 
 .dnone{
-    display: none;
+    display: none !important;
 }
 a{
     text-decoration: none;

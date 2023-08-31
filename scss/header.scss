@@ -15,7 +15,7 @@
     }
     &_logo{
         @media (max-width: 1000px) {
-            width: 50%;
+            width: 40%;
             display: flex;
             justify-content: left;
         }
@@ -68,10 +68,39 @@
             border-radius: 8px;
         }
     }
+    &_logged{
+        border: none;
+        display: block;
+        
+        @media (max-width: 1000px) {
+            order: 1;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 40%;
+        }
+        a{
+            border: 1px solid #fff0 !important;
+            display: flex;
+            column-gap: 8px;
+            .header_logged_img{
+                width: 100%;
+                padding: 10px;
+                max-width: 24px;
+                height: 24px;
+                background: #1B5044;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 24px;
+            }
+        }
+    }
     &_burger{
         display: none;
         @media (max-width: 1000px) {
-            width: 50%;
+            width: 20%;
             display: flex;
             justify-content: right;
             height: 100px;
@@ -82,3 +111,4 @@
         }
     }
 }
+
