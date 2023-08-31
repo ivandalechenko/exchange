@@ -1,0 +1,83 @@
+.today{
+    &_header{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    &_p{
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+        &_white{
+            color: white;
+        }
+        &_green{
+            color: #84e4be;
+        }
+    }
+    &_news{
+        margin-top: 15px;
+        display: flex;
+        column-gap: 24px;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        &_header{
+            color: #84E4BE;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: DM Sans;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &_content{
+            width: 100%;
+            max-width: 280px;
+            height: 160px;
+            border-radius: 10px;
+            border: 1px solid #84E4BE;
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px 20px;
+            &_element{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                &_text{
+                    display: flex;
+                    column-gap: 8px;
+                }
+                &_num{
+                    color: rgba(255, 255, 255, 0.63);
+                    font-family: DM Sans;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                &_name{
+                    font-family: DM Sans;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                &_percent{
+                    color: #F46565;
+                    font-family: DM Sans;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+    }
+    &_tranding, &_fear{
+        width: 100%;
+        max-width: 280px;
+    }
+}

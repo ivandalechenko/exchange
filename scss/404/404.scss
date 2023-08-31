@@ -1,0 +1,50 @@
+@import '../null.scss';
+
+.err404{
+    padding: 0px 20px;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1000px) {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    &_text{
+        max-width: 500px;
+        @media (max-width: 1000px) {
+            width: 100%;
+            order: 0;
+        }
+    }
+    img{
+        @media (max-width: 1000px) {
+            order: 1;
+            position: relative;
+            z-index: -1;
+            margin-top: -150px;
+        }
+    }
+    &_header{
+        color: #84E4BF;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    &_p{
+        margin-top: 38px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &_button{
+        margin-top: 38px;
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        width: 154px;
+        height: 42px;
+        border-radius: 8px;
+        background: #84E4BF;
+    }
+}

@@ -2,7 +2,20 @@
 @import '../header.scss';
 
 .paKyc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &_submit{
+        margin-top: 20px;
+        border-radius: 8px;
+        background: linear-gradient(90deg, #2E8D47 0%, #177287 100%);
+        width: 236px;
+        height: 38px;
+        font-size: 12px;
+        font-weight: 500;
+    }
     &_header{
+        width: 100%;
         margin-top: 20px;
         font-size: 24px;
         font-weight: 500;
@@ -15,6 +28,16 @@
     }
     &_label:not(:first-child){
         margin-top: 16px;
+    }
+    &_label_large{
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    &_label_small{
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 12px;
+        font-weight: 400;
     }
     &_input{
         margin-top: 8px;
@@ -72,9 +95,12 @@
         background: #84E4BF;
         font-size: 16px;
         font-weight: 400;
-        width: 80px;
         height: 38px;
-        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 12px;
+        padding: 0px 20px;
     }
     &_second_row{
         display: flex;
@@ -90,5 +116,15 @@
         .left, .right{
             width: 100%;
         }
+    }
+    &_button_text{
+        margin-top: 10px;
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 16px;
+        font-weight: 400;
+
     }
 }

@@ -1,0 +1,75 @@
+@import '../null.scss';
+@import '../header.scss';
+@import './today_news.scss';
+@import '../paTable.scss';
+
+.today{
+    &_nav{
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
+        column-gap: 20px;
+        overflow-x: auto;
+        &_large{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            column-gap: 20px;
+            @media (max-width:650px) {
+                column-gap: 10px;
+            }
+        }
+        &_large:not(:last-child){
+            border-right: 1px solid #FFF4;
+        }
+        &_small{
+            height: 40px;
+            min-width: 120px;
+            padding: 0px 20px;
+            font-size: 16px;
+            font-weight: 400;
+            @media (max-width:650px) {
+                font-size: 10px;
+                min-width: 40px;
+                height: 20px;
+                padding: 0px 10px;
+            }
+            &_active{
+                color: $green;
+                border-bottom: 1px solid $green;
+            }
+        }
+    }
+}
+
+.paTable{
+    &_list{
+        min-width: 1100px;
+    }
+    &_element{
+        &_field{
+            font-family: DM Sans;
+            font-size: 14px;
+            font-weight: 700;
+            width: 100%;
+        }
+        &_field:first-child{
+            width: 40%;
+        }
+        &_field:nth-child(2){
+            width: 70%;
+        }
+        &_field:nth-child(3){
+            width: 80%;
+        }
+        &_field:nth-child(4){
+            width: 60%;
+        }
+        &_field:nth-child(5){
+            width: 60%;
+        }
+        &_field:nth-child(6){
+            width: 60%;
+        }
+    }
+}
