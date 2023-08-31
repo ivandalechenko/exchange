@@ -1,0 +1,70 @@
+@import '../null.scss';
+@import '../header.scss';
+@import '../paNav.scss';
+@import '../paTable.scss';
+
+.paAffilate{
+    margin-top: 20px;   
+    &_content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+        @media (max-width: 800px) {
+            flex-wrap: wrap;
+            row-gap: 24px;
+        }
+    }
+    &_left{
+        width: 30%;
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+    }
+    &_header{
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    &_p{
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 12px;
+        font-weight: 400;
+    }
+    &_share{
+        display: flex;
+        margin-top: 8px;
+        column-gap: 8px;
+        @media (max-width: 550px) {
+            flex-wrap: wrap;
+            row-gap: 12px;
+        }
+    }
+    &_link{
+        width: 342px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        padding: 0px 16px;
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 12px;
+        font-weight: 400;
+        border-radius: 8px;
+        background: rgba(68, 159, 135, 0.30);
+        @media (max-width: 550px) {
+            width: 100%;
+        }
+        
+    }
+    &_button{
+        color: #84E4BF;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 8px;
+        background: #1A4539;
+        width: 80px;
+        height: 38px;
+        @media (max-width: 550px) {
+            width: 100%;
+        }
+    }
+}

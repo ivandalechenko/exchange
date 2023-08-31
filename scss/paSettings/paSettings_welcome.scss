@@ -1,0 +1,23 @@
+.paSettings{
+    &_welcome{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_name{
+            font-size: 16px;
+            font-weight: 500;
+            @media (max-width: 350px) {
+                font-size: 14px;
+            }
+        }
+        a{
+            color: $green;
+            font-size: 16px;
+            font-weight: 500;
+            @media (max-width: 350px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.paSettings{
+    &_verification{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        background: rgba(43, 99, 84, 0.85);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 20px;
+        padding: 0px 20px;
+        @media (max-width: 550px) {
+            padding: 20px;
+        }
+        img{
+            @media (max-width: 550px) {
+                display: none;
+            }
+        }
+        &_content{
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 16px;
+            max-width: 600px;
+        }
+        &_header{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        &_p{
+            width: 100%;
+            color: rgba(255, 255, 255, 0.63);
+            font-size: 12px;
+            font-weight: 400;
+        }
+        &_button{
+            color: #84E4BF;
+            font-size: 16px;
+            font-weight: 400;
+            width: 216px;
+            height: 38px;
+            border-radius: 8px;
+            background: #1A4539;
+        }
+    }
+}
