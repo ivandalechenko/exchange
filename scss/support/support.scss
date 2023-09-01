@@ -34,18 +34,105 @@
         }
         &_messages{
             height: 55vh;
-            background: #FFF3;
             margin-top: 20px;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+        }
+        &_message_wrapper{
+            width: 100%;
+            height: 55vh;
+            overflow-y: auto;
+        }
+        &_message{
+            width: 100%;
+            padding: 0px 20px;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            .row{
+                display: flex;
+                align-items: end;
+                img{
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+            .date{
+                width: 100%;
+                padding: 0px 45px;
+                margin-top: -15px;
+                color: rgba(255, 255, 255, 0.63);
+                font-size: 10px;
+                font-weight: 300;
+            }
+            .text{
+                padding: 12px 30px;
+                background: #408C71;
+                position: relative;
+                left: -20px;
+                top: -20px;
+                color: #FFF;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+        .from_me{
+            justify-content: right;
+            .row{
+                img{
+                    order: 3;
+                }
+            }
+            .text{
+                left: 20px;
+            }
+            .date{
+                text-align: right;
+            }
         }
         &_input{
+            border: 1px solid #408C71;
+            background: rgba(46, 96, 78, 0.58);
             display: flex;
             justify-content: space-between;
-            background: #FFF5;
-            width: 80%;
-            height: 5vh;
             align-items: center;
+            height: 38px;
+            width: 80%;
             margin: 0 auto;
-            
+            button{
+                height: 38px;
+                width: 80px;
+                background: #408C71;
+                font-size: 12px;
+                font-weight: 400;
+            }
+            img:hover{
+                cursor: pointer;
+                opacity: 0.8;
+            }
+            &_area{
+                padding: 0px 20px;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+                input{
+                    font-size: 12px;
+                    font-weight: 400;
+                    border: none;
+                    background: none;
+                    color: white;
+                    width: 100%;
+                }
+                input::placeholder{
+                    color: white;
+                }
+            }
         }
 
     }
