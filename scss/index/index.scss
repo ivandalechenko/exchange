@@ -10,9 +10,61 @@
     width: 100%;
     overflow: hidden;
     padding-bottom: 20px;
+    &_inner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .fone1{
         top: -594px;
-        left: -572px;
+        left: -1279px;
+    }
+    .fone2{
+        top: -23px;
+        left: -518px;
+    }
+    .fone3{
+        top: 842px;
+        left: -1249px;
+    }
+    .phone{
+        top: 109px;
+        left: 130px;
+        @media (max-width: 700px) {
+            top: 275px;
+            left: 16px;
+            img{
+                width: 268px;
+            }
+        }
+        @media (max-width: 600px) {
+            top: 43px;
+            left: 31px;
+            img{
+                width: 158px;
+            }
+        }
+    }
+    .phone_fone{
+        z-index: -2;
+        opacity: 0.3;
+        top: -50px;
+        left: 105px;
+        @media (max-width: 700px) {
+            top: 110px;
+            left: -28px;
+            img{
+                width: 600px;
+            }
+        }
+        @media (max-width: 700px) {
+            top: -64px;
+            left: -137px;
+        }
+    }
+    .chart{
+        top: 1090px;
+        left: -700px;
     }
 }
 

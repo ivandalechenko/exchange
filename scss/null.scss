@@ -133,3 +133,27 @@ input{
         background: rgba(255, 255, 255, 0.60);
     }
 }
+
+.fone{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 100px;
+    min-height: 70vh;
+    &_inner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .chart{
+        top: -237px;
+        left: -699px;
+    }
+    .chart_fone_image{
+        top: -237px;
+        left: -699px;
+    }
+    .chart_fone_image404{
+        top: -50px;
+        left: -699px;
+    }
+}
