@@ -55,4 +55,59 @@
             }
         }
     }
+
+    &_select{
+        width: 100%;
+        margin-top: 18px;
+        border-radius: 8px;
+        background: #449F87;
+        display: flex;
+        flex-wrap: wrap;
+        &_selector{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 38px;
+            padding: 0px 16px;
+        }
+        &_selector:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        &_list{
+            margin-top: 4px;
+            border-radius: 8px;
+            background: #449F87;
+            padding: 12px;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 8px;
+            &_element{
+                width: 100%;
+                display: flex;
+                column-gap: 12px;
+                align-items: center;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                max-width: 18px;
+                max-height: 18px;
+            }
+        }
+        &_name{
+            display: flex;
+            column-gap: 16px;
+            align-items: center;
+            img{
+                width: 100%;
+                height: 100%;
+                max-width: 18px;
+                max-height: 18px;
+            }
+        }
+    }
 }

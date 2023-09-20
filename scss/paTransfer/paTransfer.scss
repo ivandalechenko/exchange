@@ -60,16 +60,44 @@
         font-weight: 400;
     }
 
+    &_select:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
     &_select{
         width: 100%;
-        margin-top: 18px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 38px;
         padding: 0px 16px;
         border-radius: 8px;
         background: #449F87;
+        height: 38px;
+        &_list_element:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        &_block{
+            height: 38px;
+        margin-top: 18px;
+        width: 100%;
+        }
+        &_list{
+            padding: 0px 16px;
+            border-radius: 8px;
+            background: #449F87;
+            position: relative;
+            z-index: 2;
+            padding: 4px 20px;
+            margin-top: 8px;
+            display: flex;
+            row-gap: 8px;
+            flex-wrap: wrap;
+            &_element{
+                height: 28px;
+                width: 100%;
+            }
+        }
         &_name{
             display: flex;
             column-gap: 16px;

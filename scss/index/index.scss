@@ -22,6 +22,7 @@
     .fone2{
         top: -23px;
         left: -518px;
+        z-index: -3;
     }
     .fone3{
         top: 842px;
@@ -185,4 +186,8 @@
 .usp_button_block_bot{
     display: flex;
     justify-content: center;
+}
+
+.last_button{
+    margin-bottom: 100px;
 }
